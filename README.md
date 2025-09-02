@@ -3,12 +3,13 @@
 1. conda 가상환경 생성 (python 버전은 3.13 이상?)
 2. conda activate  가상환경
 3. conda install numpy pyyaml mkl mkl-include setuptools cmake cffi typing_extensions future six requests 
-   \\ conda install cmake=3.26 <== 핵심...
-4. conda 가상환경에 cudss 설치: pip install nvidia-cudss-cu12 
-5. which nvcc 했을 때 /usr/local/cuda-12.9/bin/nvcc 나오는지 확인
-6. pytorch 직접 빌드를 위해 git clone하기: git clone --recursive https://github.com/pytorch/pytorch.git
 
-7. 아래 명령어들 수행
+   conda install cmake=3.26 <== 핵심...
+5. conda 가상환경에 cudss 설치: pip install nvidia-cudss-cu12 
+6. which nvcc 했을 때 /usr/local/cuda-12.9/bin/nvcc 나오는지 확인
+7. pytorch 직접 빌드를 위해 git clone하기: git clone --recursive https://github.com/pytorch/pytorch.git
+
+8. 아래 명령어들 수행
 - cd pytorch
 - git checkout v2.5.1
 - git submodule sync
